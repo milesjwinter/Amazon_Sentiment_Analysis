@@ -1,2 +1,2 @@
 # Amazon_Sentiment_Analysis
-Deep learning sentiment analysis on Amazon fine food reviews dataset
+Gated recurrent units for sentiment analysis on the Amazon Fine Food Reviews dataset
