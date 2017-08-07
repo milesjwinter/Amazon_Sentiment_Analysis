@@ -20,7 +20,7 @@ import pandas as pd
 #define parameters
 max_length = 200    #max length of summary
 min_frequency = 2   #min frequency of a word to be included in vp
-n_classes = 3       #review rating score are from 1-5
+n_classes = 3       #number of classes
 batch_size = 50     #batch size
 epochs = 5          #number of training epochs
 index = 500000      #number of training samples
