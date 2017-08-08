@@ -39,9 +39,9 @@ p.add_argument("-v", "--verbosity", dest="verbosity", type=int, default=0,
 p.add_argument("-d", "--dynamic", dest="dynamic", type=bool, default=False,
                help="Whether to use a dynamic rnn")
 p.add_argument("-p", "--p_name", dest="p_name", type=str, default=None,
-               help="name of vocab processor model")
+               help="path to vocab processor model")
 p.add_argument("-q", "--q_name", dest="q_name", type=str, default='./database.sqlite',
-               help="name of vocab processor model")
+               help="path to sql database")
 args = p.parse_args()
 
 
