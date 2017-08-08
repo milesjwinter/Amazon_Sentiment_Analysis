@@ -1,5 +1,5 @@
 # Amazon Sentiment Analysis
-Perform sentiment analysis on the Amazon Fine Food Reviews dataset using TFLearn. Construct a vocabulary processor and several deep learning models with variable parameters that can be used for sentiment analysis. 
+Perform sentiment analysis on the Amazon Fine Food Reviews dataset using TFLearn. Load data from an SQL database, construct a vocabulary processor, and test several deep learning models with variable parameters. 
 
 ## About
 The Amazon Fine Food Reviews dataset is available on Kaggle and consists of 568,454 reviews of Amazon food items ([link](https://www.kaggle.com/snap/amazon-fine-food-reviews)). The database contains the following information:
