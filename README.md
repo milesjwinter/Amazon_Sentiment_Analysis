@@ -1,7 +1,7 @@
 # Amazon Sentiment Analysis
 Perform sentiment analysis on the Amazon Fine Food Reviews dataset using TFLearn. Load data from an SQL database, construct a vocabulary processor, and test several deep learning models with variable parameters. 
 
-## About
+## Dataset
 The Amazon Fine Food Reviews dataset is available on Kaggle and consists of 568,454 reviews of Amazon food items ([link](https://www.kaggle.com/snap/amazon-fine-food-reviews)). The database contains the following information:
 - Id
 - ProductId - unique identifier for the product
@@ -14,9 +14,10 @@ The Amazon Fine Food Reviews dataset is available on Kaggle and consists of 568,
 - Summary - brief summary of the review
 - Text - text of the review
 
-Scores are given on a scale of 1 to 5. For this analysis the scores and reviews were grouped using the following convention: 1,2 = negative, 3 = neutral, and 4,5 = positive. 
+## Analysis
+Scores and product reviews from the database are used to train a model that can predict if a review is negative, neutral, or positive based only the text contained in the review. The scores are given on a scale of 1 to 5. For this analysis the scores were grouped using the following convention: 1,2 = negative, 3 = neutral, and 4,5 = positive. 
 
-There are three base models available (contained in models.py): CNN, RNN w/ LSTM, and RNN w/ GRU. 
+There are three base models available (contained in models.py): CNN, RNN w/ LSTM, and RNN w/ GRU. The loading of the dataset and vocabulary processing are handled in vocab.py. 
 
 ## Usage
 The script is run with main.py and requires that a model be specified with '-m'. For example 
