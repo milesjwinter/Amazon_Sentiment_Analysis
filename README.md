@@ -37,9 +37,9 @@ The acceptable model names are cnn, rnn_lstm, or rnn_gru. The following optional
 - -u, number of hidden units: default=128
 - -v, Tensorboard verbosity value, 0-3: default=0
 
-Example: Dynamic RNN w/ LSTM, save/load vocab processor as 'my_dictionary', min frequency of 4, and max length of 100
+Example: Dynamic RNN w/ GRU, save/load vocab processor as 'my_dictionary', batch_size of 100
 ```bash
-$ python main.py -m rnn_lstm -d True -f 4 -l 100 -p my_dictionary
+$ python main.py -m rnn_gru -d True -b 100 -p my_dictionary
 ```
-
+![samp_output](gru_rnn_summary.png)
 
