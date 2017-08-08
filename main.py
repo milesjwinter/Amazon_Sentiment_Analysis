@@ -19,6 +19,7 @@ import argparse
 #set up arg parser
 p = argparse.ArgumentParser(description="optional arguments")
 p.add_argument("-m", "--model", dest="model", type=str, required=True,
+               choices=['cnn', 'rnn_gru', 'rnn_lstm'],
                help="Name of model to use: options are 'cnn', 'rnn_gru', or 'rnn_lstm'")
 p.add_argument("-l", "--max_length", dest="max_length", type=int, default=200,
                help="max length of text")
