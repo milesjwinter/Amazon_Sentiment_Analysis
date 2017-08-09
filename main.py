@@ -1,7 +1,7 @@
 """
 Author: Miles Winter
 Desc: Perform sentiment analysis on the Amazon Fine Food Reviews
-      dataset using a dynamic RNN in TFLearn.
+      dataset using TFLearn.
 
       Dataset available at:
       https://www.kaggle.com/snap/amazon-fine-food-reviews
